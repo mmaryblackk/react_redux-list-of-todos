@@ -28,7 +28,7 @@ const filterTodos = (
         case FilterBy.COMPLETED:
           return todo.completed;
         default:
-          return todo;
+          return true;
       }
     });
   }

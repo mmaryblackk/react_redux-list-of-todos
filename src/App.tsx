@@ -39,7 +39,7 @@ export const App = () => {
             <div className="block">
               {loading && <Loader />}
               {!loading && error && <p>{error}</p>}
-              {!loading && todos.length && <TodoList />}
+              {!loading && todos.length > 0 && <TodoList />}
             </div>
           </div>
         </div>
